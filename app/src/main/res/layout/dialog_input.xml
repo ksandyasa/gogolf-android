@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/ivCloseInput"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_close_input"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvTitleInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/gray1"
+        android:text="@string/di_title"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/ivCloseInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:customTextViewFont="CharlevoixPro-Medium.otf"
+        />
+
+    <co.id.GoGolf.ui.CustomEditText
+        android:id="@+id/etCodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:hint="@string/di_input_hint"
+        android:gravity="center"
+        android:layout_below="@id/tvTitleInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:customEditTextFont="CharlevoixPro-Medium.otf"/>
+
+    <co.id.GoGolf.ui.CustomButton
+        android:id="@+id/btVerifyInput"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:text="@string/di_verify"
+        android:background="@drawable/btn_verify_bg"
+        android:clickable="true"
+        android:layout_below="@id/etCodeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+</RelativeLayout>

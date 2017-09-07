@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/svContainerForgot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlHeaderForgot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeaderForgot_height"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription=""
+                    android:scaleType="center"
+                    android:src="@drawable/bg_camera"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="@dimen/ivLogo_width"
+                    android:layout_height="@dimen/ivLogo_height"
+                    android:contentDescription=""
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo_text"
+                    android:layout_centerInParent="true"/>
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:text="@string/fg_title1"
+                    android:layout_above="@id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:text="@string/fg_title2"
+                    android:layout_below="@id/ivLogo"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="48dp"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+            </RelativeLayout>
+
+            <co.id.GoGolf.ui.CustomTextView
+                android:id="@+id/tvTitleForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:text="@string/fg_title3"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+            <co.id.GoGolf.ui.CustomEditText
+                android:id="@+id/etEmailForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fg_email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:imeOptions="actionGo"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                app:customEditTextFont="CharlevoixPro-Regular.otf"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <co.id.GoGolf.ui.CustomButton
+        android:id="@+id/btnSendForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="@string/fg_submit"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:background="@drawable/btn_update_bg"
+        android:layout_margin="4dp"
+        android:layout_gravity="bottom|center"
+        app:customButtonFont="CharlevoixPro-Medium.otf"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

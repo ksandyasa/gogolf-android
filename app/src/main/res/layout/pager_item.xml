@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/viewpager_home_height">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_home_height"
+        android:contentDescription=""
+        android:src="@drawable/golf_example"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="GOlf example"
+        android:textColor="@color/white"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_centerInParent="true"
+        app:customTextViewFont="CharlevoixPro-Bold.otf"
+        />
+
+</RelativeLayout>

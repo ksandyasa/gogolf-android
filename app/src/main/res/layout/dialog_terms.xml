@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvDoneTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:text="Done"
+        android:textStyle="bold"
+        android:background="@color/green1"
+        android:gravity="right|center_vertical"
+        android:padding="8dp"
+        app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+    <WebView
+        android:id="@+id/wvTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

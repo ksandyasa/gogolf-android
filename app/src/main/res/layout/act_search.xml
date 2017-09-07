@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white.nocolor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/svContainerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/gray2"
+                android:padding="4dp">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sc_price_range"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/white"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"
+                    />
+
+                <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rbPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    custom:connectingLineColor="@color/green"
+                    custom:pinColor="@color/white.nocolor"
+                    custom:rangeBarColor="@color/green"
+                    custom:selectorColor="@color/green"
+                    custom:textColor="@color/white"
+                    custom:tickColor="@color/green"
+                    custom:tickEnd="10000"
+                    custom:tickInterval="500"
+                    custom:tickStart="0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp . 10"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white"
+                        app:customTextViewFont="CharlevoixPro-Regular.otf"
+                        />
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rp . 5000000"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white"
+                        app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray2"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="4dp"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sc_area"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvAreaSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/gray2"
+                android:padding="4dp"
+                android:layout_marginTop="8dp">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sc_golf_course_name"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <co.id.GoGolf.ui.CustomEditText
+                    android:id="@+id/etGolfCourseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColorHint="@color/place_autocomplete_search_hint"
+                    android:theme="@style/EditTextDefault"
+                    android:gravity="center"
+                    app:customEditTextFont="CharlevoixPro-Regular.otf"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvGolfCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottomSearch"
+                android:layout_width="match_parent"
+                android:layout_height="266dp">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <co.id.GoGolf.ui.CustomButton
+        android:id="@+id/btSearch"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_verify_bg"
+        android:text="@string/sc_search"
+        android:textColor="@color/white"
+        android:layout_margin="4dp"
+        android:layout_gravity="bottom|center"
+        app:customButtonFont="CharlevoixPro-Medium.otf"/>
+
+</android.support.design.widget.CoordinatorLayout>

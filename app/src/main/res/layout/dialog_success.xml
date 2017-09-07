@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/ivCloseSuccess"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:contentDescription=""
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_close_input"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/ivIconSuccess"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:contentDescription=""
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_checklist"
+        android:layout_below="@id/ivCloseSuccess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvMessageSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/gray1"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/ivIconSuccess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:customTextViewFont="CharlevoixPro-Medium.otf"
+        />
+
+</RelativeLayout>

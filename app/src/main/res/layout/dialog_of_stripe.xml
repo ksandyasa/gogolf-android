@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    >
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvDoneStripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:text="Payment"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        />
+
+    <!--<WebView-->
+        <!--android:id="@+id/wvStripe"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone">-->
+
+    <!--</WebView>-->
+
+</LinearLayout>

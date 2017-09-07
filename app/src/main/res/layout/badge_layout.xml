@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/ivNotifBadge"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_notification"
+        tools:ignore="ContentDescription" />
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvNotifCount"
+        android:layout_width="18sp"
+        android:layout_height="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:text="0"
+        android:background="@drawable/badge_bg"
+        android:layout_alignTop="@id/ivNotifBadge"
+        android:layout_alignRight="@id/ivNotifBadge"
+        android:layout_alignEnd="@id/ivNotifBadge"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:customTextViewFont="CharlevoixPro-Bold.otf"
+        />
+
+</RelativeLayout>

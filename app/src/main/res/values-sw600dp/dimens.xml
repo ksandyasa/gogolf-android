@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="llLogin_top">60dp</dimen>
+    <dimen name="llBtnLogin_top">32dp</dimen>
+    <dimen name="ivLogo_width">171dp</dimen>
+    <dimen name="ivLogo_height">76dp</dimen>
+    <dimen name="etEmail_top">32dp</dimen>
+    <dimen name="rlHeaderReg_height">171dp</dimen>
+    <dimen name="ivPhoto_height">95dp</dimen>
+    <dimen name="imageView_height">95dp</dimen>
+    <dimen name="icon_menu_height">24dp</dimen>
+    <dimen name="rlHeaderForgot_height">171dp</dimen>
+    <dimen name="iv_icon_frag_one_height">57dp</dimen>
+    <dimen name="ivImage_promo_height">416dp</dimen>
+    <dimen name="viewpager_home_height">378dp</dimen>
+    <dimen name="password_detail_bottom_space">152dp</dimen>
+    <dimen name="golf_detail_pager_height">378dp</dimen>
+    <dimen name="item_promo_ivgolf_height">285dp</dimen>
+</resources>

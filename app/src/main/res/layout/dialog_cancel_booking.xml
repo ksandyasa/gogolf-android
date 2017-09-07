@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCloseCancelBooking"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:contentDescription=""
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_close_input"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/gray1"
+        android:text="Do you really want to cancel this booking?"
+        android:gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:customTextViewFont="CharlevoixPro-Medium.otf"
+        />
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvDateCancelBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday, 12 May 2016 02:00 PM"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/gray1"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+    <co.id.GoGolf.ui.CustomTextView
+        android:id="@+id/tvCourseCancelBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matoa National Golf Course"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/gray1"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        >
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight : "
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/gray1"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvFlightCancelBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/gray1"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player : "
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/gray1"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvPlayerCancelBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/gray1"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price : "
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/gray1"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvTotPriceCancelBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 2.000.000"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/gray1"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <co.id.GoGolf.ui.CustomButton
+            android:id="@+id/btnYesCancelBooking"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/dp_yes"
+            android:background="@drawable/btn_verify_bg"
+            android:layout_marginRight="8dp"
+            app:customButtonFont="CharlevoixPro-Medium.otf"/>
+
+        <co.id.GoGolf.ui.CustomButton
+            android:id="@+id/btnNoCancelBooking"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:text="@string/dp_no"
+            android:background="@drawable/btn_no_bg"
+            android:layout_marginLeft="8dp"
+            app:customButtonFont="CharlevoixPro-Medium.otf"/>
+
+    </LinearLayout>
+
+</LinearLayout>

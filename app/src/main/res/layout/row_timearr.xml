@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlTimeArr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvTimeArr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="22:00"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvPromoStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/orange"
+            android:padding="3dp"
+            android:text="Promo"
+            android:visibility="gone"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white"
+            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+</RelativeLayout>

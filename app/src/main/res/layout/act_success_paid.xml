@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            android:title=""
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="114dp"
+                        >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green"
+                        android:gravity="center|bottom"
+                        android:orientation="vertical"
+                        >
+
+                        <co.id.GoGolf.ui.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sp_thank_you"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="47dp"
+                            app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                        <co.id.GoGolf.ui.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sp_your_payment"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="16dp"
+                            app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_checklist" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sp_total_amount"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"
+                    />
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text=""
+                    android:textColor="@color/gray1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sp_booking_code"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:id="@+id/tvBookingCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/gray1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sp_transaction_time"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/gray1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sp_payment_type"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sp_creadit_card"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/gray1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/line" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line1" />
+
+        <co.id.GoGolf.ui.CustomButton
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/sp_finish"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:background="@drawable/btn_check_point_bg"
+            android:layout_margin="4dp"
+            app:customButtonFont="CharlevoixPro-Medium.otf"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

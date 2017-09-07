@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<co.id.GoGolf.ui.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:textColor="@color/black"
+    android:ellipsize="marquee"
+    android:lines="1"
+    android:maxLines="1"
+    android:textAppearance="?android:textAppearanceMedium"
+    app:customTextViewFont="CharlevoixPro-Regular.otf"/>

@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'gogolfRelease'
+            keyPassword 'gogolf'
+            storeFile file('gogolf.jks')
+            storePassword 'gogolf'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "co.id.GoGolf"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 17
+        versionName "1.0.17"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        development {
+            buildConfigField "String", "BASE_URL", '"http://golf-api.yocto-international.com"'
+            buildConfigField "String", "CLIENT_KEY", '"VT-client-4OSC9X0eEYZWrXft"'
+            buildConfigField "String", "TERM_OF_USE", '"http://dev.gogolfindonesia.com/legal/terms"'
+        }
+        production {
+            buildConfigField "String", "BASE_URL", '"https://api.gogolf.co.id"'
+            buildConfigField "String", "CLIENT_KEY", '"http://golf-api.yocto-international.com/veritrans/vtweb/notification"'
+            buildConfigField "String", "TERM_OF_USE", '"http://gogolf.co.id/legal/terms"'
+            minSdkVersion 15
+            applicationId 'co.id.GoGolf'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            targetSdkVersion 20
+            versionCode 17
+            versionName '1.0.17'
+        }
+    }
+    packagingOptions{
+        exclude 'AndroidManifest.xml'
+        exclude 'lib/arm64-v8a/libcardioDecider.so'
+        exclude 'lib/arm64-v8a/libcardioRecognizer.so'
+        exclude 'lib/arm64-v8a/libcardioRecognizer_tegra2.so'
+        exclude 'lib/arm64-v8a/libopencv_core.so'
+        exclude 'lib/arm64-v8a/libopencv_imgproc.so'
+        exclude 'lib/armeabi/libcardioDecider.so'
+        exclude 'lib/armeabi-v7a/libcardioDecider.so'
+        exclude 'lib/armeabi-v7a/libcardioRecognizer.so'
+        exclude 'lib/armeabi-v7a/libcardioRecognizer_tegra2.so'
+        exclude 'lib/armeabi-v7a/libopencv_core.so'
+        exclude 'lib/armeabi-v7a/libopencv_imgproc.so'
+        exclude 'lib/mips/libcardioDecider.so'
+        exclude 'lib/x86/libcardioDecider.so'
+        exclude 'lib/x86/libcardioRecognizer.so'
+        exclude 'lib/x86/libcardioRecognizer_tegra2.so'
+        exclude 'lib/x86/libopencv_core.so'
+        exclude 'lib/x86/libopencv_imgproc.so'
+        exclude 'lib/x86_64/libcardioDecider.so'
+        exclude 'lib/x86_64/libcardioRecognizer.so'
+        exclude 'lib/x86_64/libcardioRecognizer_tegra2.so'
+        exclude 'lib/x86_64/libopencv_core.so'
+        exclude 'lib/x86_64/libopencv_imgproc.so'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4'
+    compile('id.co.veritrans:scancard:0.11.2') {
+        exclude module: 'uiflow'
+    }
+    apt 'com.google.dagger:dagger-compiler:2.0'
+    provided 'javax.annotation:jsr250-api:1.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+    testCompile 'org.powermock:powermock-api-mockito:1.5.6'
+    testCompile 'org.powermock:powermock-module-junit4:1.6.2'
+    compile 'me.relex:circleindicator:1.2.1@aar'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.google.android.gms:play-services-maps:9.0.0'
+    compile 'com.google.android.gms:play-services-location:9.0.0'
+    compile 'com.google.firebase:firebase-core:9.0.0'
+    compile 'com.google.firebase:firebase-messaging:9.0.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    compile 'com.android.support:cardview-v7:23.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.makeramen:roundedimageview:1.5.0'
+    compile 'com.appyvet:materialrangebar:1.3'
+    compile 'com.google.android.gms:play-services-auth:9.0.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.8.2'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'id.co.veritrans:coreflow:0.11.2-SANDBOX'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile 'id.co.veritrans:uiflow:0.11.2-SANDBOX'
+    compile 'com.google.dagger:dagger:2.0'
+    compile 'me.zhanghai.android.materialprogressbar:library:1.1.4'
+    compile 'com.stripe:stripe-android:1.1.1'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

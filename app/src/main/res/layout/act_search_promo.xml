@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvContainerSearchPromo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="@color/gray2"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:text="@string/scp_date"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:layout_weight="10"
+                    android:gravity="center">
+
+                    <co.id.GoGolf.ui.CustomEditText
+                        android:id="@+id/etDatePromo"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="8.75"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:hint="yyyy-mm-dd"
+                        android:inputType="date"
+                        android:background="@drawable/round_white_bg"
+                        android:padding="4dp"
+                        android:focusable="false"
+                        android:enabled="false"
+                        app:customEditTextFont="CharlevoixPro-Medium.otf"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1.25"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ivDatePromo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription=""
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_date_green"
+                            android:tint="#F0F0F0"
+                            android:clickable="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="@color/gray2"
+                android:layout_marginTop="8dp">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:text="@string/scp_price_range"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"
+                    />
+
+                <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rbPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    custom:connectingLineColor="@color/green"
+                    custom:pinColor="@color/white.nocolor"
+                    custom:rangeBarColor="@color/green"
+                    custom:selectorColor="@color/green"
+                    custom:textColor="@color/white.nocolor"
+                    custom:tickColor="@color/green"
+                    custom:tickEnd="5000"
+                    custom:tickInterval="500"
+                    custom:tickStart="500" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvStart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:text="Rp . 500.000"
+                        app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rp . 5000000"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white"
+                        app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="@color/gray2"
+                android:layout_marginTop="8dp">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scp_tee_time"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/rbTeeTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    custom:connectingLineColor="@color/green"
+                    custom:pinColor="@color/white.nocolor"
+                    custom:rangeBarColor="@color/green"
+                    custom:selectorColor="@color/green"
+                    custom:textColor="@color/white.nocolor"
+                    custom:tickColor="@color/green"
+                    custom:tickEnd="24"
+                    custom:tickInterval="1"
+                    custom:tickStart="0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white"
+                        app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="24:00"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white"
+                        app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray2">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sc_area"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvAreaSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/gray2"
+                android:padding="4dp"
+                android:layout_marginTop="8dp">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sc_golf_course_name"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <co.id.GoGolf.ui.CustomEditText
+                    android:id="@+id/etGolfCourseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColorHint="@color/place_autocomplete_search_hint"
+                    android:theme="@style/EditTextDefault"
+                    android:gravity="center"
+                    app:customEditTextFont="CharlevoixPro-Regular.otf"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvGolfCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rvBottomSearchPromo"
+                android:layout_width="match_parent"
+                android:layout_height="114dp">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_gravity="bottom|center"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line1"/>
+
+        <co.id.GoGolf.ui.CustomButton
+            android:id="@+id/btSearch"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_verify_bg"
+            android:text="@string/scp_search"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_margin="4dp"
+            app:customButtonFont="CharlevoixPro-Medium.otf"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

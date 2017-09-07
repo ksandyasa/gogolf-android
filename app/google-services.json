@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "687365606371",
+    "firebase_url": "https://gogolf-968ca.firebaseio.com",
+    "project_id": "gogolf-968ca",
+    "storage_bucket": "gogolf-968ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687365606371:android:17cd89ce68128075",
+        "android_client_info": {
+          "package_name": "co.id.GoGolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687365606371-3thuhv1lempfs64enqj2olb64ln3jhfh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "687365606371-gv7k3gsqhofmcgr738orqndr217cc5kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7TNuzWxW9WVm7wCRJIEElUq8hlJxg73E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687365606371-3thuhv1lempfs64enqj2olb64ln3jhfh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "687365606371-gggtumo2fba97dntk40g44up4s5raf8i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.id.GoGolf"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687365606371:android:cd1b64df4711a524",
+        "android_client_info": {
+          "package_name": "co.id.GoGolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687365606371-3thuhv1lempfs64enqj2olb64ln3jhfh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "687365606371-gv7k3gsqhofmcgr738orqndr217cc5kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7TNuzWxW9WVm7wCRJIEElUq8hlJxg73E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

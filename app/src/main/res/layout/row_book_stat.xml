@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:contentDescription=""
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ivImage"
+        android:orientation="vertical">
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matoa Nation"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/black"
+            app:customTextViewFont="CharlevoixPro-Semibold.otf"
+            />
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvBookingCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking code : 2212244151"
+            android:textColor="@color/black"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription=""
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_date" />
+
+            <co.id.GoGolf.ui.CustomTextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 May 2015 02:00 PM"
+                android:textColor="@color/gray1"
+                android:textAppearance="?android:textAppearanceSmall"
+                app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <co.id.GoGolf.ui.CustomTextView
+                android:id="@+id/tvFlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Flight : 2"
+                android:textColor="@color/gray1"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+            <co.id.GoGolf.ui.CustomTextView
+                android:id="@+id/tvPLayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player : 6"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/gray1"
+                app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription=""
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_pricetag" />
+
+            <co.id.GoGolf.ui.CustomTextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 2.000.000"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/gray1"
+                app:customTextViewFont="CharlevoixPro-Regular.otf"/>
+
+        </LinearLayout>
+
+        <co.id.GoGolf.ui.CustomTextView
+            android:id="@+id/tvStatusPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/red_default"
+            android:layout_marginTop="8dp"
+            app:customTextViewFont="CharlevoixPro-Semibold.otf"/>
+
+    </LinearLayout>
+
+    <co.id.GoGolf.ui.CustomButton
+        android:id="@+id/btnStatus"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:text="@string/rh_detail"
+        android:textSize="8.5sp"
+        android:textColor="@color/green"
+        android:background="@drawable/bt_book_now_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:customButtonFont="CharlevoixPro-Semibold.otf"
+        />
+
+</RelativeLayout>

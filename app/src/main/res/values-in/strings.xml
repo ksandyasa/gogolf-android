@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">GoGolf Indonesia</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">592352584276284</string>
+    <string name="map_key">AIzaSyD7TNuzWxW9WVm7wCRJIEElUq8hlJxg73E</string>
+    <string name="server_client_id">687365606371-3thuhv1lempfs64enqj2olb64ln3jhfh.apps.googleusercontent.com</string>
+
+    <!--Register / Login Page-->
+    <string name="rg_email_address">Alamat email</string>
+    <string name="rg_password">Kata sandi</string>
+    <string name="rg_sign_in">Masuk</string>
+    <string name="rg_forgot_password"><b><u>Lupa Password?</u></b></string>
+    <string name="rg_link1">Tidak memiliki account?</string>
+    <string name="rg_sign_up"> <u>Daftar</u></string>
+    <string name="rg_sign_up1">Daftar</string>
+    <string name="rg_link2">atau masuk menggunakan Facebook</string>
+    <string name="rg_first_name">Nama Depan</string>
+    <string name="rg_last_name">Nama Belakang</string>
+    <string name="rg_gender">Jenis Kelamin</string>
+    <string name="rg_male">Laki-Laki</string>
+    <string name="rg_female">Perempuan</string>
+    <string name="rg_country">Negara</string>
+    <string name="rg_phone_number">Telepon</string>
+    <string name="rg_fb_login">Masuk dengan Facebook</string>
+    <string name="rg_term1">Anda setuju dengan </string>
+    <string name="rg_term2">Syarat dan Ketentuan</string>
+    <string name="rg_term3"> dari GoGolf degan membuat akun baru.</string>
+
+    <!--Forgot Pass Page-->
+    <string name="fg_nav">Lupa Password</string>
+    <string name="fg_email_address">Alamat email</string>
+    <string name="fg_submit">Submit</string>
+    <string name="fg_title1">Selamat datang di</string>
+    <string name="fg_title2">dan nikmati pengalaman yang nyaman untuk pemesanan Golf</string>
+    <string name="fg_title3">Silahkan inputkan alamat email anda, dan kami akan mengirim link untuk mengubah password anda</string>
+
+    <!--Header Menu Tab-->
+    <string name="hmt_home">BERANDA</string>
+    <string name="hmt_promotion">PROMOSI</string>
+    <string name="hmt_search">CARI</string>
+    <string name="hmt_map">PETA</string>
+    <string name="hmt_point">POIN</string>
+
+    <!-- Home bottom menu -->
+    <string name="home_weekend">Minggu ini</string>
+    <string name="home_course">Lapangan Golf</string>
+    <string name="home_map">Peta</string>
+    <string name="home_point">Poin</string>
+
+    <!-- Weekend page -->
+    <string name="wk_nav">Akhir Pekan</string>
+    <string name="wk_saturday">Sabtu</string>
+    <string name="wk_sunday">Minggu</string>
+
+    <!-- Search Golf Course page -->
+    <string name="sgc_nav">Cari Lapangan Golf</string>
+
+    <!--Pre Booking Page-->
+    <string name="pb_nav">Pemesanan</string>
+    <string name="pb_date">Tanggal</string>
+    <string name="pb_flight_number">Nomor Flight</string>
+    <string name="pb_book_now">Pesan Sekarang</string>
+    <string name="pb_payment_price">Payment in Golf Course</string>
+    <string name="pb_total_price">Total Harga</string>
+    <string name="pb_deposit_price">Harga Deposit</string>
+    <string name="pb_acquisition_point">Poin Akuisisi</string>
+    <string name="pb_cancellation_policy">Peraturan Pembatalan</string>
+
+    <!--Booking Detail-->
+    <string name="bd_cancel_book">Cancel Booking</string>
+
+    <!--Preview Page-->
+    <string name="pv_date">Tanggal</string>
+    <string name="pv_flight_number">Nomor Flight</string>
+    <string name="pv_tee_time">Tee Time</string>
+    <string name="pv_price">Harga</string>
+    <string name="pv_player_number">Jumlah Pemain</string>
+    <string name="pv_player_type">Jenis Pemain</string>
+    <string name="pv_cart">Cart</string>
+    <string name="cancel">Jika Anda membatalkan pesanan %1$s am sebelum tee time, Anda dapat membatalkan pesanan Anda secara gratis. Dalam kasus ini, kami akan mengembalikan deposit kepada Anda. Jika Anda membatalkan kurang dari %2$s jam sebelum tee time atau tidak datang, kami akan menetapkan deposit sebagai biaya pembatalan.</string>
+    <string name="pv_book">Pesan</string>
+
+    <!--Profile Page-->
+    <string name="pf_nav">Pembaharuan Profil</string>
+    <string name="pf_nav1">Profil Saya</string>
+    <string name="pf_name">Nama</string>
+    <string name="pf_first_name">Nama Depan</string>
+    <string name="pf_last_name">Nama Belakang</string>
+    <string name="pf_email">Email</string>
+    <string name="pf_phone">Telepon</string>
+    <string name="pf_address">Alamat</string>
+    <string name="pf_oldpass">Kata Sandi Lama</string>
+    <string name="pf_newpass">Kata Sandi Baru</string>
+    <string name="pf_confirmpass">Konfirmasi Kata Sandi Baru</string>
+    <string name="pf_language">Bahasa</string>
+    <string name="pf_push_notif">Notifikasi</string>
+    <string name="pf_password">Kata Sandi</string>
+    <string name="pf_title_password_detail">Masukkan password baru anda</string>
+    <string name="pf_password_update">Pembaharuan Profil</string>
+
+    <!--Search Page-->
+    <string name="sc_price_range">Kisaran harga</string>
+    <string name="sc_area">Area</string>
+    <string name="sc_golf_course_name">Nama Lapangan Golf</string>
+    <string name="sc_search">Cari</string>
+
+    <!--Search Promo Page-->
+    <string name="scp_date">Tanggal</string>
+    <string name="scp_price_range">Kisaran harga</string>
+    <string name="scp_tee_time">Tee Time</string>
+    <string name="scp_area">Area</string>
+    <string name="scp_golf_course_name">Nama Lapangan Golf</string>
+    <string name="scp_search">Cari</string>
+
+    <!--Success Paid Page-->
+    <string name="sp_thank_you">Terimakasih!</string>
+    <string name="sp_your_payment">Your payment has been processed</string>
+    <string name="sp_total_amount">Total Amount</string>
+    <string name="sp_booking_code">Kode Pemesanan</string>
+    <string name="sp_transaction_time">Transaction Time</string>
+    <string name="sp_payment_type">Payment Type</string>
+    <string name="sp_creadit_card">Kartu Kredit</string>
+    <string name="sp_finish">FINISH</string>
+
+    <!--Tutorial Page-->
+    <string name="tr_title1">Pesan Lapangan Golf</string>
+    <string name="tr_title2">Cari Promosi</string>
+    <string name="tr_title3">Cari Lapangan Golf</string>
+    <string name="tr_title4">Poin Reward</string>
+    <string name="tr_desc1">Pilih Lapangan Golf yang anda sukai dan pesan dengan mudah dengan GoGolf</string>
+    <string name="tr_desc2">GoGolf Memberikan informasi Promosi yang menarik dari Lapangan Golf.</string>
+    <string name="tr_desc3">Cari Lapangan Golf sesuai dengan yang Anda inginkan.</string>
+    <string name="tr_desc4">Simpan Poin Anda dari setiap pemesanan Lapangan Golf &amp; dapatkan potongan harga dari Poin tersebut</string>
+    <string name="tr_skip">Lewati</string>
+    <string name="tr_done">Selesai</string>
+
+    <!--Credit Card Page-->
+    <string name="cc_we_accept">We Accept</string>
+    <string name="cc_name_of_card">Name of card</string>
+    <string name="cc_card_number">Card Number</string>
+    <string name="cc_expiry_date_mm_yy">Expiry Date (mm/yy)</string>
+    <string name="cc_cvv">CVV</string>
+    <string name="cc_desc">This information is kept encrypted on your phone</string>
+    <string name="cc_total_amount">Total amount</string>
+    <string name="cc_pay_now">Pay Now</string>
+
+    <!--Slider Page-->
+    <string name="sl_promotion_code">Kode Promosi</string>
+    <string name="sl_tutorial">Tutorial</string>
+    <string name="sl_booking_history">Riwayat Pemesanan</string>
+    <string name="sl_booking_status">Status Pemesanan</string>
+    <string name="sl_my_profile">Profil saya</string>
+    <string name="sl_log_out">Keluar</string>
+
+    <!--Confirm Payment Page-->
+    <string name="cp_please_confirm">Please confirm your payment below</string>
+    <string name="cp_card_number">Card Number :</string>
+    <string name="cp_total_amount">Total Amount :</string>
+    <string name="cp_confirm">Bayar</string>
+    <string name="cp_cancel">Batal</string>
+
+    <!--Dialog Point use-->
+    <string name="dp_title">Apakah Anda ingin menggunakan poin untuk diskon?</string>
+    <string name="dp_your_current_point">Poin Anda saat ini</string>
+    <string name="dp_necessary_point">Poin yang dibutuhkan</string>
+    <string name="dp_discount">Diskon</string>
+    <string name="dp_price">Harga</string>
+    <string name="dp_yes">Ya</string>
+    <string name="dp_no">Tidak</string>
+
+    <!--Point Page-->
+    <string name="pp_check_point_history">Periksa riwayat poin</string>
+    <string name="pp_desc">Anda bisa mendapatkan keuntungan dengan menggunakan 256 poin Anda.</string>
+    <string name="pp_your_current_point">Poin Anda saat ini</string>
+    <string name="pp_title_point">poin</string>
+    <string name="pp_value_point">0</string>
+    <string name="pp_last_update">Update terakhir</string>
+
+    <!--Order Form-->
+    <string name="of_tee_time">Tee time</string>
+    <string name="of_price">Harga</string>
+    <string name="of_player_number">Jumlah Pemain</string>
+    <string name="of_cart">Cart</string>
+    <string name="of_yes">Ya</string>
+    <string name="of_no">Tidak</string>
+    <string name="of_member_number">Member Number</string>
+    <string name="of_player_type">Jenis Pemain</string>
+
+    <!--Dialog Input-->
+    <string name="di_title">Silahkan masukkan Kode Promosi anda</string>
+    <string name="di_input_hint">XXXX</string>
+    <string name="di_verify">Verifikasi</string>
+
+    <!--Row History-->
+    <string name="rh_detail">Rincian</string>
+
+    <!--Row Status-->
+    <string name="rs_detail">Rincian</string>
+
+    <!--Row Golf-->
+    <string name="rgf_view_detail">Lihat rincian</string>
+    <string name="rgf_booking_now">Pesan Sekarang</string>
+
+    <!--Row Point-->
+    <string name="rp_point">Poin</string>
+
+    <!--Row Promotion-->
+    <string name="rpro_booking_now">Pesan Sekarang</string>
+
+
+</resources>

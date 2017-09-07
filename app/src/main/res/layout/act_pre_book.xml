@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/svContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/pre_book_header" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="@color/white"
+                >
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="@string/scp_date"
+                    android:layout_marginLeft="4dp"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_weight="10"
+                    android:gravity="center">
+
+                    <co.id.GoGolf.ui.CustomEditText
+                        android:id="@+id/etDatePreBook"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="8.75"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:hint="yyyy-mm-dd"
+                        android:inputType="date"
+                        android:background="@drawable/round_gray1_bg"
+                        android:padding="4dp"
+                        android:focusable="false"
+                        android:enabled="false"
+                        app:customEditTextFont="CharlevoixPro-Medium.otf"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1.25"
+                        android:orientation="horizontal"
+                        android:gravity="fill">
+
+                        <ImageView
+                            android:id="@+id/ivDatePreBook"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription=""
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_date_green"
+                            android:clickable="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:weightSum="10">
+
+                <co.id.GoGolf.ui.CustomTextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pb_flight_number"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    app:customTextViewFont="CharlevoixPro-Medium.otf"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <co.id.GoGolf.ui.CustomTextView
+                        android:id="@+id/tvFlightNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:text="Choose Flight"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:customTextViewFont="CharlevoixPro-SemiBold.otf"
+                        />
+
+                    <ImageView
+                        android:id="@+id/ivFlightNumberDropDown"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_drop_down"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <co.id.GoGolf.ui.CustomVP
+                android:id="@+id/llForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <include layout="@layout/layout_booknow"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line1" />
+
+        <co.id.GoGolf.ui.CustomButton
+            android:id="@+id/btBookNow"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="@string/pb_book_now"
+            android:textColor="@color/white"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:background="@drawable/btn_check_point_bg"
+            android:layout_margin="4dp"
+            app:customButtonFont="CharlevoixPro-Medium.otf"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
